@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/books-icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookshelf Application</title>
+  </head>
+  <body>
+    <div class="container card">
+      <h1>Bookshelf Application</h1>
+      <div class="card">
+        <div class="container">
+          <h3>Tambah Buku</h3>
+          <button id="toggleForm">Enable</button>
+          <form action="" method="POST" id="form">
+            <input
+              type="text"
+              class="inputForm"
+              name="judul"
+              id="titleBooks"
+              placeholder="Judul Buku"
+              disabled
+            />
+            <input
+              type="text"
+              class="inputForm"
+              id="authorBooks"
+              name="penulis"
+              placeholder="Penulis Buku"
+              disabled
+            />
+            <input
+              type="number"
+              class="inputForm"
+              name="tahun"
+              id="yearBooks"
+              placeholder="Tahun Terbit"
+              disabled
+            />
+            <label for="check"
+              >Selesai Dibaca
+              <input
+                type="checkbox"
+                class="inputForm"
+                name="check"
+                id="checkboxBooks"
+                value="yes"
+                disabled
+              />
+            </label>
+            <input
+              type="submit"
+              value="Kirim"
+              class="submit inputForm"
+              disabled
+            />
+          </form>
+        </div>
+      </div>
+      <div class="card" id="searchContainer">
+        <h3>Ingin Mencari Buku?</h3>
+        <button id="searchConfirm">Iya</button>
+        <div class="formSearch hidden">
+          <input type="text" id="inputSearch" placeholder="Cari Judul Buku" />
+          <button type="submit" id="searchBtn">Cari</button>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="card" id="belum">
+          <h3>Buku yang belum selesai dibaca</h3>
+          <object data="img/read.svg" width="200"></object>
+          <button id="btnUn">Cek Data</button>
+        </div>
+        <div class="card" id="sudah">
+          <h3>Buku yang sudah selesai dibaca</h3>
+          <object data="img/done.svg"></object>
+          <button id="btnCom">Cek Data</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/DOM.js"></script>
+  </body>
+</html>

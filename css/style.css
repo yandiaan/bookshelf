@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+.flex-row {
+  display: flex;
+}
+.card {
+  margin: 25px auto;
+  padding: 25px;
+  box-shadow: 1px 1px 4px 1px rgba(61, 44, 44, 0.2);
+  border-radius: 15px;
+}
+.flex-row object {
+  width: 200px;
+  display: block;
+  margin: 50px auto;
+}
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgb(99, 0, 228);
+  color: white;
+  margin: 10px;
+}
+button:hover {
+  background-color: rgb(39, 0, 90);
+}
+input[type="text"],
+input[type="number"] {
+  outline: none;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 15px;
+  width: 80%;
+}
+.submit:enabled {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgb(99, 0, 228);
+  color: white;
+}
+.submit:enabled:hover {
+  background-color: rgb(39, 0, 90);
+}
+
+.items1,
+.items2 {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+#belum,
+#sudah {
+  width: 45%;
+}
+.flex-row .card button {
+  margin-top: auto 0;
+}
+
+span {
+  float: left;
+}
+.title,
+.author,
+.year {
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  #belum,
+  #sudah {
+    width: 90%;
+  }
+  .flex-row {
+    flex-direction: column;
+  }
+}
